@@ -9,31 +9,17 @@
     </ion-grid>
 </ion-header>
 
-
 <ion-list>
   <ion-item slot="header" class="asignaturas-header">
-    <ion-label >Asignaturas</ion-label>
+    <ion-label>Asignaturas</ion-label>
   </ion-item>
-  <ion-item  class="letrasAcordion">
-    <ion-label ><ion-icon name="download-outline"></ion-icon> 001-D | Programación Mobile | 65.7%</ion-label>
+  
+  <ion-item *ngFor="let asignatura of asignaturas" class="letrasAcordion">
+    <ion-label>
+      <ion-icon name="download-outline"></ion-icon>
+       {{ asignatura.asignatura }}
+    </ion-label>
   </ion-item>
-
-  <ion-item class="letrasAcordion">
-    <ion-label><ion-icon name="download-outline"></ion-icon> 004-D | Programación Web | 70%</ion-label>
-  </ion-item>
-
-  <ion-item class="letrasAcordion"> 
-    <ion-label><ion-icon name="download-outline"></ion-icon> 013-D | Programación de Algoritmos | 93%</ion-label>
-  </ion-item>
-
-  <ion-item class="letrasAcordion">
-    <ion-label><ion-icon name="download-outline"></ion-icon> 011-D | Inglés | 85%</ion-label>
-  </ion-item>
-
-  <ion-item class="letrasAcordion">
-    <ion-label><ion-icon name="download-outline"></ion-icon> 007-D | Matemáticas | 100%</ion-label>
-  </ion-item>
-
 </ion-list>
 
 </ion-content>
