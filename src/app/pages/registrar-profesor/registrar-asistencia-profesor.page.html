@@ -1,0 +1,75 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-grid class="header-row">
+      <ion-row >
+        <ion-icon name="arrow-back-outline" size="large" class="flechaback" (click)="goBack()"></ion-icon>
+        <h3 class="titulo"><ion-icon name="calendar-clear-outline"></ion-icon>  REGISTRAR ASISTENCIA</h3>
+      </ion-row>
+      </ion-grid>
+  </ion-header>
+
+  <ion-row >
+    
+    <p class="titulo-h3"> <ion-icon name="information-circle-outline"></ion-icon>  Presiona una de las asignaturas para generar el QR.</p>
+  </ion-row>
+  
+
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" class="asignaturas-header">
+        <ion-label>Programación Mobile</ion-label>
+      </ion-item >
+
+      <div class="ion-padding" slot="content" (click)="navigateToQrProf()"><p class="letrasAcordion">Sección 002-D</p></div>
+      <div class="ion-padding" slot="content" (click)="navigateToQrProf()"><p class="letrasAcordion">Sección 002-D</p></div>
+    
+  </ion-accordion>
+
+
+    <ion-accordion value="second">
+      <ion-item slot="header" class="asignaturas-header">
+        <ion-label>Programación Web</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content" (click)="navigateToQrProf()"><p class="letrasAcordion">Sección 001-D</p></div>
+      <div class="ion-padding" slot="content" (click)="navigateToQrProf()"><p class="letrasAcordion">Sección 002-D</p></div>
+    </ion-accordion>
+
+
+
+    <ion-accordion value="third">
+      <ion-item slot="header" class="asignaturas-header">
+        <ion-label>Programación Base de Datos</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content" (click)="navigateToQrProf()"><p class="letrasAcordion">Sección 001-D</p></div>
+      <div class="ion-padding" slot="content" (click)="navigateToQrProf()"><p class="letrasAcordion">Sección 002-D</p></div>
+
+    </ion-accordion>
+  </ion-accordion-group>
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar class="toolbar">
+    <ion-grid>
+      <ion-row class="ion-justify-content-around">
+
+        <ion-col class="ion-text-center">
+          <ion-icon name="person-circle-outline" size="large" (click)="navigateToPerfil()"></ion-icon>
+          <p>Perfil</p>
+        </ion-col>
+
+
+        <ion-col class="ion-text-center">
+          <ion-icon name="home-outline" size="large" (click)="navigateToHome()"></ion-icon>
+          <p>Inicio</p>
+        </ion-col>
+
+
+        <ion-col class="ion-text-center">
+          <ion-icon name="log-out-outline" size="large" (click)="logout()"></ion-icon>
+          <p>Logout</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

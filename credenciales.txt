@@ -1,0 +1,29 @@
+Emails y pass:
+juchango@duocuc.cl
+juanito 123
+nicochango@duocuc.cl
+nico123
+franichanga@duocuc.cl
+frani123
+fikoji@profesor.duocuc.cl
+kojima123
+
+Campos Alumnos:
+carrera"Ingeniería en Informática"
+email "juchango@duocuc.cl"
+papellido "Chango"
+pnombre "Juanito"
+rut "123.045.258-4"
+sapellido "Waripolo"
+sede "DUOC UC: Puente Alto"
+snombre "Ignacio"
+
+Campo Docente:
+email "fikoji@profesor.duocuc.cl"
+escuela "Escuela Informática y Telecomunicaciones"
+papellido "Kojimbo"
+pnombre "Fideo"
+rut "5.023.485-4"
+sapellido "Kojima"
+sede "DUOC UC: Puente Alto"
+snombre "Hideo"
